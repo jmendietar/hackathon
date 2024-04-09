@@ -1,0 +1,17 @@
+spring:
+  application:
+    name:challenger
+  datasource:
+    url: jdbc:mysql://localhost:3306/codeChallenger
+    username: root
+    password: toor
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
